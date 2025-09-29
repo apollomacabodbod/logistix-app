@@ -16,6 +16,7 @@ export default function Contact() {
         >
           demo
         </motion.p>
+        <p className="">demo2</p>
       </div>
 
       <div className="flex flex-col min-h-screen bg-red-400"></div>
