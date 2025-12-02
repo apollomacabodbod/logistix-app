@@ -28,11 +28,7 @@ export default function Header() {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40 ${
-          isBlogDetail || scrolling
-            ? "backdrop-blur-lg bg-[#28252E]/40 shadow-lg"
-            : "bg-transparent backdrop-blur-none shadow-none"
-        }`}
+        className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40 ${" bg-[#FFF] shadow-lg"}`}
       >
         <div className="flex flex-col  max-w-[1200px] lg:mx-auto  px-[1.25em] py-[1em]">
           <div className="flex items-center justify-between">
