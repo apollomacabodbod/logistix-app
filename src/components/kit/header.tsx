@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import telephone from "src/assets/header/telephone.svg";
 import humberger from "src/assets/header/humberger.svg";
 import Sidebar from "./side-bar";
 import logoLogistix from "src/assets/header/logo-logistix.png";
