@@ -6,7 +6,6 @@ import logoLogistix from "src/assets/header/logo-logistix.png";
 import redTelephone from "src/assets/header/red-telephone.svg";
 
 export default function Header() {
-  const [scrolling, setScrolling] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const location = useLocation();
@@ -14,7 +13,6 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const isScrolling = window.scrollY > 0;
-      setScrolling(isScrolling);
     };
 
     window.addEventListener("scroll", handleScroll);
