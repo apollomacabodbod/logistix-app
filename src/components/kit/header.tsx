@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import logo from "src/assets/header/logo.svg";
 import { Link, useLocation } from "react-router-dom";
-import telephone from "src/assets/header/telephone.svg";
 import humberger from "src/assets/header/humberger.svg";
 import Sidebar from "./side-bar";
+import logoLogistix from "src/assets/header/logo-logistix.png";
+import redTelephone from "src/assets/header/red-telephone.svg";
 
 export default function Header() {
   const [scrolling, setScrolling] = useState(false);
@@ -38,65 +38,75 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center cursor-pointer ">
               <Link to={"/"} className="flex flex-col  py-[1.0625em] ">
-                <img src={logo} alt="" className="min-w-[7.5em]" />
+                <img
+                  src={logoLogistix}
+                  alt=""
+                  className="min-w-[12.5em] object-cover object-center"
+                />
               </Link>
             </div>
 
             <div className="lg:flex lg:flex-col hidden">
-              <div className="flex items-center  lg:gap-[1.7em] xl:gap-[2em]">
-                <Link
-                  to={"/"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {" "}
-                  HOME
-                </Link>
-                <Link
-                  to={"/about"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {" "}
-                  ABOUT
-                </Link>
-                <Link
-                  to={"/vacancies"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {""}
-                  VACANCIES
-                </Link>
-                <Link
-                  to={"/pricing"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {" "}
-                  PRICING
-                </Link>
-                <Link
-                  to={"/blog"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {" "}
-                  BLOG
-                </Link>
-                <Link
-                  to={"/contact"}
-                  className="text-white font-inter text-[0.875rem] not-italic font-bold "
-                >
-                  {" "}
-                  CONTACT
-                </Link>
-              </div>
-            </div>
+              <div className="flex items-center gap-[2em]">
+                <div className="lg:flex lg:flex-col hidden">
+                  <div className="flex items-center  lg:gap-[1.7em] xl:gap-[2em]">
+                    <Link
+                      to={"/"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase"
+                    >
+                      {" "}
+                      HOME
+                    </Link>
+                    <Link
+                      to={"/about"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
+                    >
+                      {" "}
+                      Services
+                    </Link>
+                    <Link
+                      to={"/vacancies"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
+                    >
+                      {""}
+                      Shipping
+                    </Link>
+                    <Link
+                      to={"/pricing"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
+                    >
+                      {" "}
+                      Tracking
+                    </Link>
+                    <Link
+                      to={"/blog"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
+                    >
+                      {" "}
+                      News
+                    </Link>
+                    <Link
+                      to={"/contact"}
+                      className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
+                    >
+                      {" "}
+                      Contact Us
+                    </Link>
+                  </div>
+                </div>
 
-            <div className="lg:flex lg:flex-col hidden">
-              <div className="flex items-center gap-[1em] ">
-                <div className="flex items-center gap-[0.5em] cursor-pointer  border border-[#FFF] py-[1em] px-[1.5em] hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
-                  <p className="text-[#FFF] font-inter text-[1rem] not-italic font-bold ">
-                    (021) 345-6789
-                  </p>
+                <div className="flex items-center gap-[1em] ">
+                  <div className="flex items-center gap-[1em] cursor-pointer  border border-[#D42B22] py-[0.5em] px-[1em] hover:opacity-100 transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
+                    <img
+                      src={redTelephone}
+                      alt=""
+                      className="object-cover object-center w-[0.8125em]"
+                    />
 
-                  <img src={telephone} alt="" />
+                    <p className="text-[#D42B22] font-rajdhani text-[1rem] font-bold uppercase ">
+                      (021) 345-6789
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
