@@ -10,18 +10,10 @@ export default function Header() {
 
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolling = window.scrollY > 0;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Detect if user is on blog detail page
-  const isBlogDetail =
-    location.pathname.startsWith("/blog/") && location.pathname !== "/blog";
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <>
