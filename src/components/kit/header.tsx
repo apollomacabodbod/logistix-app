@@ -1,38 +1,17 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import humberger from "src/assets/header/humberger.svg";
 import Sidebar from "./side-bar";
 import logoLogistix from "src/assets/header/logo-logistix.png";
 import redTelephone from "src/assets/header/red-telephone.svg";
 
 export default function Header() {
-  const [scrolling, setScrolling] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolling = window.scrollY > 0;
-      setScrolling(isScrolling);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Detect if user is on blog detail page
-  const isBlogDetail =
-    location.pathname.startsWith("/blog/") && location.pathname !== "/blog";
 
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40 ${
-          isBlogDetail || scrolling
-            ? "backdrop-blur-lg bg-[#28252E]/40 shadow-lg"
-            : "bg-transparent backdrop-blur-none shadow-none"
-        }`}
+        className={`fixed top-0 left-0 w-full  transition-all duration-1000 ease-in-out z-40 ${" bg-[#FFF] shadow-lg"}`}
       >
         <div className="flex flex-col  max-w-[1200px] lg:mx-auto  px-[1.25em] py-[1em]">
           <div className="flex items-center justify-between">

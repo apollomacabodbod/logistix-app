@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         rajdhani: ["Rajdhani", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
       },
 
       colors: {
