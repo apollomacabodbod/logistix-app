@@ -14,7 +14,7 @@ export default function HomeHeroSection() {
         <div className="absolute inset-0 bg-[rgba(34,34,34,0.50)]"></div>
 
         <div className="z-10">
-          <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em]  gap-[2em] mb-[9em] mt-[9em]">
+          <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em]  gap-[2em] mb-[10em] mt-[10em]">
             <motion.p
               className="text-[4.5rem] text-[#FFF] font-rajdhani font-semibold "
               initial="hidden"
