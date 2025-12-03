@@ -1,6 +1,7 @@
 import cheerfulDelivery from "src/assets/home/cheerful-delivery.jpg";
 import border from "src/assets/home/border.svg";
 import learnMore from "src/assets/home/learn-more.svg";
+import HomeHeroSectionCards from "./home-hero-section-cards";
 export default function HomeHeroSection() {
   return (
     <>
@@ -8,10 +9,10 @@ export default function HomeHeroSection() {
         className="flex flex-col relative bg-cover bg-buttom lg:bg-center"
         style={{ backgroundImage: `url(${cheerfulDelivery})` }}
       >
-        <div className="absolute inset-0 bg-[#000,0.3]"></div>
+        <div className="absolute inset-0 bg-[rgba(34,34,34,0.50)]"></div>
 
         <div className="z-10">
-          <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em] mt-[9.5em] gap-[2em] mb-[20.5625em]">
+          <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em]  gap-[2em] mb-[9em] mt-[9em]">
             <p className="text-[4.5rem] text-[#FFF] font-rajdhani font-semibold ">
               The First World Class <br /> Logistic Company
             </p>
@@ -41,6 +42,12 @@ export default function HomeHeroSection() {
               />
             </button>
           </div>
+        </div>
+
+        {/*  */}
+
+        <div className="">
+          <HomeHeroSectionCards />
         </div>
       </div>
     </>
