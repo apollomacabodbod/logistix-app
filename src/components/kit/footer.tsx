@@ -7,6 +7,7 @@ import youtube from "src/assets/footer/youtube.svg";
 import border from "src/assets/footer/border.svg";
 import subscribeNow from "src/assets/footer/subscribe-now.svg";
 import whiteBorder from "src/assets/footer/white-border.svg";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -14,63 +15,194 @@ export default function Footer() {
       <div className="bg-[#023761] pt-[6.25em]">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 max-w-[1200px] lg:mx-auto  px-[1.25em] py-[6.25em] gap-[2.5em]">
           <div className="flex flex-col">
-            <img
+            <motion.img
               src={logo}
               alt=""
               className="object-cover object-center w-[12.5em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#FFF] font-mulish font-normal mt-[2em]">
+            <motion.p
+              className="text-[#FFF] font-mulish font-normal mt-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               4200 Hamill Avenue, San Diego, California 92109
-            </p>
+            </motion.p>
 
             <div className="flex flex-col mt-[2em]">
-              <p className="text-[#FFF] font-rajdhani text-[0.625rem] font-bold uppercase">
+              <motion.p
+                className="text-[#FFF] font-rajdhani text-[0.625rem] font-bold uppercase"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Email
-              </p>
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              </motion.p>
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 info@example.com
-              </p>
+              </motion.p>
             </div>
 
             <div className="flex flex-col mt-[1em]">
-              <p className="text-[#FFF] font-rajdhani text-[0.625rem] font-bold uppercase">
+              <motion.p
+                className="text-[#FFF] font-rajdhani text-[0.625rem] font-bold uppercase"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Phone
-              </p>
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              </motion.p>
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 021 3456 789
-              </p>
+              </motion.p>
             </div>
 
             <div className="flex items-center mt-[2em] gap-[2em]">
-              <img
+              <motion.img
                 src={facebook}
                 alt=""
                 className="object-cover object-center w-[0.56175em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <img
+              <motion.img
                 src={twitter}
                 alt=""
                 className="object-cover object-center w-[0.8738125em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <img
+              <motion.img
                 src={instagram}
                 alt=""
                 className="object-cover object-center w-[0.811375em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <img
+              <motion.img
                 src={linkedIn}
                 alt=""
                 className="object-cover object-center w-[0.811375em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <img
+              <motion.img
                 src={youtube}
                 alt=""
                 className="object-cover object-center w-[0.998625em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
             </div>
           </div>
@@ -78,92 +210,305 @@ export default function Footer() {
           {/* card two */}
 
           <div className="flex flex-col ">
-            <p className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold">
+            <motion.p
+              className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Company
-            </p>
+            </motion.p>
 
-            <img
+            <motion.img
               src={border}
               alt=""
               className="object-cover object-center w-[3.75em] my-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
             <div className="flex flex-col gap-[0.625em]">
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 About Us
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 We are hiring
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Affiliate Program
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Business Accounts
-              </p>
+              </motion.p>
             </div>
           </div>
 
           {/* Card Three */}
 
           <div className="flex flex-col ">
-            <p className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold">
+            <motion.p
+              className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Help
-            </p>
+            </motion.p>
 
-            <img
+            <motion.img
               src={border}
               alt=""
               className="object-cover object-center w-[3.75em] my-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
             <div className="flex flex-col gap-[0.625em]">
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Email Us
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Help & FAQ
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Make a Return
-              </p>
+              </motion.p>
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Shipping Policy
-              </p>
+              </motion.p>
             </div>
           </div>
 
           {/* Card Four */}
 
           <div className="flex flex-col ">
-            <p className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold">
+            <motion.p
+              className="text-[#FFF] font-rajdhani text-[1.5625rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Join Our Newsletter
-            </p>
+            </motion.p>
 
-            <img
+            <motion.img
               src={border}
               alt=""
               className="object-cover object-center w-[3.75em] my-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+            <motion.p
+              className="text-[#FFF] font-mulish text-[1rem] font-normal "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Lorem ipsum dolor sit amet consec tetuer adi piscing elit aenean
               com modo ligula eget dolor aenean.
-            </p>
+            </motion.p>
 
-            <input
+            <motion.input
               type="text"
               className="outline-none p-[1em] mt-[2em]"
               placeholder="Enter your email address"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <button className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em] mt-[1em]">
+            <motion.button
+              className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em] mt-[1em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               <p className="text-[#FFF] font-rajdhani text-[1rem] font-bold uppercase">
                 Subscribe Now
               </p>
@@ -173,7 +518,7 @@ export default function Footer() {
                 alt=""
                 className="object-cover object-center w-[0.8125em]"
               />
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
@@ -182,23 +527,73 @@ export default function Footer() {
         <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em] py-[2em] ">
           <div className="flex flex-col sm:flex-row sm:items-center  sm:justify-between gap-[1.5em]">
             <div className="flex items-center gap-[1em] justify-center sm:justify-start mt-[1em] order-1 sm:order-2">
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Terms of Use
-              </p>
-              <img
+              </motion.p>
+              <motion.img
                 src={whiteBorder}
                 alt=""
                 className="object-cover object-center w-[0.3125em]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
               />
 
-              <p className="text-[#FFF] font-mulish text-[1rem] font-normal ">
+              <motion.p
+                className="text-[#FFF] font-mulish text-[1rem] font-normal "
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                  },
+                }}
+              >
                 Privacy Policy
-              </p>
+              </motion.p>
             </div>
 
-            <p className="text-[#FFF] font-mulish text-[1rem] font-normal text-center order-2 sm:order-1 ">
+            <motion.p
+              className="text-[#FFF] font-mulish text-[1rem] font-normal text-center order-2 sm:order-1 "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               © Copyright 2025 Logistix
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
