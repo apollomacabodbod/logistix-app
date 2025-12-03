@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import humberger from "src/assets/header/humberger.svg";
+import humberger from "src/assets/header/humberger_202E30.svg";
 import Sidebar from "./side-bar";
 import logoLogistix from "src/assets/header/logo-logistix.png";
 import redTelephone from "src/assets/header/red-telephone.svg";

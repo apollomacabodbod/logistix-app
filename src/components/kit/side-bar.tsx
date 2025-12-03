@@ -1,5 +1,6 @@
 import { FC, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import closeIcon from "src/assets/sidebar/close-icon_202E30.svg";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -55,11 +56,11 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
       }`}
     >
       {/* Blurred background and overlay */}
-      <div className="absolute inset-0 before:absolute before:inset-0 before:bg-[#28252E]/40 before:backdrop-blur-lg before:z-10"></div>
+      <div className="absolute inset-0 before:absolute before:inset-0 bg-[#FFF]  before:z-10"></div>
 
       <div className="flex flex-col items-start p-4 relative z-20">
         <img
-          src={"/close-icon.svg"}
+          src={closeIcon}
           width={0}
           height={0}
           alt="menu icon"
@@ -70,17 +71,17 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         {/* Sidebar links */}
         {[
           { to: "/", label: "Home" },
-          { to: "/about", label: "About" },
-          { to: "/vacancies", label: "Vacancies" },
-          { to: "/pricing", label: "Pricing" },
-          { to: "/contact", label: "Contact" },
-          { to: "/blog", label: "Blog" },
+          { to: "/about", label: "Services" },
+          { to: "/vacancies", label: "Shipping" },
+          { to: "/pricing", label: "Tracking" },
+          { to: "/contact", label: "News" },
+          { to: "/blog", label: "Contact Us" },
         ].map((link) => (
           <Link
             key={link.to}
             to={link.to}
             onClick={() => setSidebarOpen(false)}
-            className="font-roboto text-[1.25rem] leading-[2em] font-light whitespace-nowrap text-[#FFF] opacity-70 hover:opacity-100 transition-opacity duration-1000 ease-in-out"
+            className="font-roboto text-[1.25rem] leading-[2em] font-light whitespace-nowrap text-[#202E30] opacity-70 hover:opacity-100 transition-opacity duration-1000 ease-in-out"
           >
             {link.label}
           </Link>
