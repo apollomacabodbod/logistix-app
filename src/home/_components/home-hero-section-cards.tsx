@@ -4,30 +4,94 @@ import searchSchedules from "src/assets/home/search-schedules.svg";
 import ArtboardTwo from "src/assets/home/ArtboardTwo.svg";
 import ArtboardThree from "src/assets/home/ArtboardThree.svg";
 import bookNow from "src/assets/home/book-now.svg";
+import { motion } from "framer-motion";
 
 export default function HomeHeroSectionCards() {
   return (
     <>
       {" "}
       <div className="grid lg:grid-cols-3 max-w-[1200px] lg:mx-auto  px-[1.25em]  gap-[2.5em] relative top-[3.875em]">
-        <div className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]">
+        <motion.div
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           <div className="flex items-center gap-[1em]">
-            <img
+            <motion.img
               src={trackAShipment}
               alt=""
               className="object-cover object-center w-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold">
+            <motion.p
+              className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Track Your Shipment
-            </p>
+            </motion.p>
           </div>
 
-          <p className="text-[#202E30] font-mulish text-[1rem] font-normal">
+          <motion.p
+            className="text-[#202E30] font-mulish text-[1rem] font-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Vel sagittis quam sodales sederat porta nunc amet malesuada.
-          </p>
+          </motion.p>
 
-          <button className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]">
+          <motion.button
+            className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <p className="text-[#FFF] font-rajdhani text-[1rem] font-bold uppercase">
               Track a shipment
             </p>
@@ -36,29 +100,92 @@ export default function HomeHeroSectionCards() {
               alt=""
               className="object-cover object-center w-[0.625em]"
             />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/*  */}
 
-        <div className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]">
+        <motion.div
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           <div className="flex items-center gap-[1em]">
-            <img
+            <motion.img
               src={ArtboardTwo}
               alt=""
               className="object-cover object-center w-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold">
+            <motion.p
+              className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Search Schedules
-            </p>
+            </motion.p>
           </div>
 
-          <p className="text-[#202E30] font-mulish text-[1rem] font-normal">
+          <motion.p
+            className="text-[#202E30] font-mulish text-[1rem] font-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Vel sagittis quam sodales sederat porta nunc amet malesuada.
-          </p>
+          </motion.p>
 
-          <button className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]">
+          <motion.button
+            className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <p className="text-[#FFF] font-rajdhani text-[1rem] font-bold uppercase">
               Search Schedules
             </p>
@@ -67,29 +194,92 @@ export default function HomeHeroSectionCards() {
               alt=""
               className="object-cover object-center w-[0.8125em]"
             />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
         {/*  */}
 
-        <div className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]">
+        <motion.div
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+            },
+          }}
+        >
           <div className="flex items-center gap-[1em]">
-            <img
+            <motion.img
               src={ArtboardThree}
               alt=""
               className="object-cover object-center w-[2em]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
             />
 
-            <p className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold">
+            <motion.p
+              className="text-[#202E30] font-rajdhani text-[1.3rem] font-semibold"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+                },
+              }}
+            >
               Book Pickup Now
-            </p>
+            </motion.p>
           </div>
 
-          <p className="text-[#202E30] font-mulish text-[1rem] font-normal">
+          <motion.p
+            className="text-[#202E30] font-mulish text-[1rem] font-normal"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             Vel sagittis quam sodales sederat porta nunc amet malesuada.
-          </p>
+          </motion.p>
 
-          <button className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]">
+          <motion.button
+            className="flex items-center justify-center bg-[#D42B22] py-[1em] px-[2em] gap-[1em]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, ease: "easeInOut" }, // Smooth transition
+              },
+            }}
+          >
             <p className="text-[#FFF] font-rajdhani text-[1rem] font-bold uppercase">
               Book now
             </p>
@@ -98,8 +288,8 @@ export default function HomeHeroSectionCards() {
               alt=""
               className="object-cover object-center w-[0.75em]"
             />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </>
   );
