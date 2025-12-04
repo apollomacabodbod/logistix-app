@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function HomeLogisticSolution() {
   return (
     <>
-      <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em] mt-[10.125em] ">
+      <div className="flex flex-col max-w-[1200px] lg:mx-auto  px-[1.25em] mt-[10.125em] pb-[6.25em]">
         <div className="lg:flex lg:items-center  lg:justify-between gap-[2.5em]">
           <div className="flex flex-col gap-[2em]">
             <div className="flex flex-col">
