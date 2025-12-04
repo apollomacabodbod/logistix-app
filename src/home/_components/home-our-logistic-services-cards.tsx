@@ -1,4 +1,3 @@
-import card from "src/assets/our-logistic-services/card.png";
 import courierWithParcel from "src/assets/our-logistic-services/courier-with-parcel.jpg";
 import croppedShot from "src/assets/our-logistic-services/cropped-shot.jpg";
 import deliveryManCourier from "src/assets/our-logistic-services/delivery-man-courier.jpg";
