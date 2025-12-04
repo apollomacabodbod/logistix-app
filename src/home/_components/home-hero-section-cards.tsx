@@ -12,7 +12,7 @@ export default function HomeHeroSectionCards() {
       {" "}
       <div className="grid lg:grid-cols-3 max-w-[1200px] lg:mx-auto  px-[1.25em]  gap-[2.5em] relative top-[3.875em]">
         <motion.div
-          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em] shadow-lg"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -106,7 +106,7 @@ export default function HomeHeroSectionCards() {
         {/*  */}
 
         <motion.div
-          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em] shadow-lg"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -200,7 +200,7 @@ export default function HomeHeroSectionCards() {
         {/*  */}
 
         <motion.div
-          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em]"
+          className="flex flex-col bg-[#FFF] p-[2em] gap-[1em] shadow-lg"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
