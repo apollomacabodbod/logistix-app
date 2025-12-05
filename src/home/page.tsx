@@ -2,6 +2,7 @@ import HomeHeroSection from "./_components/home-hero-section";
 import HomeLogisticSolution from "./_components/home-logistic-solution";
 import HomeOurLogisticServices from "./_components/home-our-logistic-services";
 import HomeOurLogisticServicesCards from "./_components/home-our-logistic-services-cards";
+import HomeWhyChooseUs from "./_components/home-why-choose-us";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeLogisticSolution />
       <HomeOurLogisticServices />
       <HomeOurLogisticServicesCards />
+      <HomeWhyChooseUs />
     </>
   );
 }
