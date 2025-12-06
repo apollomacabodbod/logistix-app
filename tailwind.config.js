@@ -4,6 +4,10 @@ module.exports = {
   content: ["src/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        customFour: "1299px",
+      },
+
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         rajdhani: ["Rajdhani", "sans-serif"],
