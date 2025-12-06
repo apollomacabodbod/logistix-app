@@ -6,7 +6,7 @@ import deliveryMan from "src/assets/covid/delivery-man.jpg";
 export default function HomeCovid() {
   return (
     <>
-      <div className="flex flex-col  lg:mx-auto   px-[1.25em]  customFour:px-[0em] ">
+      <div className="flex flex-col  lg:mx-auto   px-[1.25em]  customFour:px-[0em] mt-[6.25em]">
         <div className="customFour:flex customFour:items-center gap-[2.5em]">
           <div className="customFour:flex customFour:items-center gap-[2em] ">
             <img
