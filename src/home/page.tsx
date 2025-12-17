@@ -1,6 +1,7 @@
 import HomeCovid from "./_components/home-covid";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomeLogisticSolution from "./_components/home-logistic-solution";
+import HomeLogoPartner from "./_components/home-logo-partner";
 import HomeOurLogisticServices from "./_components/home-our-logistic-services";
 import HomeOurLogisticServicesCards from "./_components/home-our-logistic-services-cards";
 import HomeWhyChooseUs from "./_components/home-why-choose-us";
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeWhyChooseUs />
       <Carousel />
       <HomeCovid />
+      <HomeLogoPartner />
     </>
   );
 }
