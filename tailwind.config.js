@@ -12,6 +12,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
         rajdhani: ["Rajdhani", "sans-serif"],
         mulish: ["Mulish", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
 
       colors: {
