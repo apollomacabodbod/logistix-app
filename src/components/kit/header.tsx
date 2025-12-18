@@ -37,7 +37,7 @@ export default function Header() {
                       HOME
                     </Link>
                     <Link
-                      to={"/about"}
+                      to={"/services"}
                       className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
                     >
                       {" "}
