@@ -1,4 +1,3 @@
-import warehouseWorkers from "src/assets/services/warehouse-workers.jpg";
 import warehouseOrStorage from "src/assets/services/warehouse-or-storage.jpg";
 import border from "src/assets/services/border.svg";
 import whiteGreaterThan from "src/assets/services/white-greater-than.svg";
