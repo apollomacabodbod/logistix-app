@@ -2,6 +2,7 @@ import HomeCovid from "./_components/home-covid";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomeLogisticSolution from "./_components/home-logistic-solution";
 import HomeLogoPartner from "./_components/home-logo-partner";
+import HomeNews from "./_components/home-news";
 import HomeOurLogisticServices from "./_components/home-our-logistic-services";
 import HomeOurLogisticServicesCards from "./_components/home-our-logistic-services-cards";
 import HomeTestimontials from "./_components/home-testimontials";
@@ -24,6 +25,7 @@ export default function Home() {
       <HomeTestimontialsYellowBox />
       <HomeTestimontials />
       <HomeTestimontialsCards />
+      <HomeNews />
     </>
   );
 }
