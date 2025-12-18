@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./home/page";
-import Contact from "./contact/page";
 import { LenisProvider } from "./context/smooth-scroll";
 import Header from "./components/kit/header";
 import Footer from "./components/kit/footer";
+import Services from "./services/page";
 
 function App() {
   const location = useLocation(); // ✅ Use the hook
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
 
         <div key={location.pathname}>
