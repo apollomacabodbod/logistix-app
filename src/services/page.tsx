@@ -3,6 +3,7 @@ import ServicesHeroSection from "./_components/services-hero-section";
 import ServicesLogoPartner from "./_components/services-logo-partner";
 import ServicesOurLogistic from "./_components/services-our-logistic";
 import ServicesOurLogisticCards from "./_components/services-our-logistic-cards";
+import ServicesTestimontialsYellowBox from "./_components/services-testimontials-yellow-box";
 
 export default function Services() {
   return (
@@ -12,6 +13,7 @@ export default function Services() {
       <ServicesOurLogisticCards />
       <ServicesCovid />
       <ServicesLogoPartner />
+      <ServicesTestimontialsYellowBox />
     </>
   );
 }

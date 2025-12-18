@@ -1,6 +1,7 @@
 import box from "src/assets/testimontials/box.svg";
 import { motion } from "framer-motion";
-export default function HomeTestimontialsYellowBox() {
+
+export default function ServicesTestimontialsYellowBox() {
   return (
     <>
       <div className="flex flex-col ">
