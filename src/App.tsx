@@ -5,6 +5,7 @@ import { LenisProvider } from "./context/smooth-scroll";
 import Header from "./components/kit/header";
 import Footer from "./components/kit/footer";
 import Services from "./services/page";
+import Testimontials from "./testimontials/page";
 
 function App() {
   const location = useLocation(); // ✅ Use the hook
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/testimontials" element={<Testimontials />} />
         </Routes>
 
         <div key={location.pathname}>

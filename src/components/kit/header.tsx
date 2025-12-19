@@ -44,11 +44,11 @@ export default function Header() {
                       Services
                     </Link>
                     <Link
-                      to={"/vacancies"}
+                      to={"/testimontials"}
                       className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
                     >
                       {""}
-                      Shipping
+                      Testimontials
                     </Link>
                     <Link
                       to={"/pricing"}
