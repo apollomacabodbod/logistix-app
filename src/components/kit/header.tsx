@@ -55,7 +55,7 @@ export default function Header() {
                       className="text-[#202E30] font-rajdhani text-[1.125rem] font-semibold uppercase "
                     >
                       {" "}
-                      Tracking
+                      Pricing
                     </Link>
                     <Link
                       to={"/blog"}
