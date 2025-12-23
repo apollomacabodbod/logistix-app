@@ -6,6 +6,7 @@ import Header from "./components/kit/header";
 import Footer from "./components/kit/footer";
 import Services from "./services/page";
 import Testimontials from "./testimontials/page";
+import Pricing from "./pricing/page";
 
 function App() {
   const location = useLocation(); // ✅ Use the hook
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/testimontials" element={<Testimontials />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
 
         <div key={location.pathname}>
