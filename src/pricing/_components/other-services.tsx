@@ -1,7 +1,7 @@
 export default function OtherServices() {
   return (
     <>
-      <div className=""></div>
+      <div className="flex"></div>
     </>
   );
 }
