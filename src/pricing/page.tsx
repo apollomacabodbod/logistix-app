@@ -1,3 +1,4 @@
+import OtherServices from "./_components/other-services";
 import PricingHeroSection from "./_components/pricing-hero-section";
 import PricingPlan from "./_components/pricing-plan";
 import PricingPlanCards from "./_components/pricing-plan-cards";
@@ -10,6 +11,7 @@ export default function Pricing() {
       <PricingYellowBox />
       <PricingPlan />
       <PricingPlanCards />
+      <OtherServices />
     </>
   );
 }
